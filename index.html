@@ -10,7 +10,7 @@
     <header>
         <div class="navigasi">
             <a href="form.html">Isi Form Disini</a>
-            <a href="info.html">Informasi Multimedia</a>
+            <a href="gallery.html">Informasi Multimedia</a>
         </div>
     </header>
     <main>
@@ -25,24 +25,30 @@
             </div>
         </div>
         <div class="tabel">
-            <table">
-                <tr>
-                    <th>No</th>
-                    <th>Nama</th>
-                    <th>Email</th>
-                    <th>Pesan</th>
-                </tr>
-                <tr>
-                    <td>1</td>
-                    <td>Abin</td>
-                    <td>[EMAIL_ADDRESS]</td>
-                    <td>Halo, saya tertarik dengan komunitas ini!</td>
-                </tr>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Nama</th>
+                        <th>Email</th>
+                        <th>Bidang Minat</th>
+                    </tr>
+                </thead>
+                <tbody id="data-anggota">
+                    <!-- Data dari array akan tampil di sini -->
+                    <tr>
+                        <td>1</td>
+                        <td>Abin</td>
+                        <td>abin@email.com</td>
+                        <td>Web Development</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </main>
     <footer>
         <p>Website By Abin Copyright 2026</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>

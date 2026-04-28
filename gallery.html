@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Multimedia - Tech Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigasi">
+            <a href="index.html">Home</a>
+            <a href="form.html">Isi Form Disini</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Galeri Multimedia</h1>
+            <p>Dibawah ini adalah konten visual dan audio dari Tech Community:</p>
+
+            <div class="media-section">
+                <h3>1. Gambar Komunitas</h3>
+                <!-- Gambar bisa diganti lewat JS -->
+                <img id="gambarUtama" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=400" alt="Tech People" style="width: 100%; max-width: 400px; border-radius: 8px;">
+                <br><br>
+                <button onclick="gantiGambar()">Ganti Gambar</button>
+            </div>
+
+            <hr>
+
+            <div class="media-section">
+                <h3>2. Video Tutorial</h3>
+                <!-- Iframe dari request user -->
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/FvOpPeKSf_4?si=8HkIzm5Ptq56pzda" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="media-section">
+                <h3>3. Audio Podcast</h3>
+                <audio id="myAudio">
+                    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    Browser anda tidak mendukung tag audio.
+                </audio>
+                <div class="audio-controls">
+                    <button onclick="putarAudio()">Putar Musik</button>
+                    <button onclick="berhentiAudio()">Berhenti Musik</button>
+                </div>
+                <br>
+                <button onclick="tampilInfo()">Lihat Info Halaman</button>
+            </div>
+
+            <br>
+            <a href="index.html">Kembali ke Halaman Utama</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Website By Abin Copyright 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

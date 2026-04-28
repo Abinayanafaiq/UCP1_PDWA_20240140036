@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Anggota - Tech Community</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="navigasi">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Informasi Multimedia</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Form Pendaftaran Anggota</h1>
+            <p>Silahkan isi data diri anda di bawah ini:</p>
+            
+            <form id="memberForm">
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap:</label><br>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="minat">Bidang Minat:</label><br>
+                    <select id="minat" name="minat" required>
+                        <option value="">-- Pilih Minat --</option>
+                        <option value="Web Development">Web Development</option>
+                        <option value="Mobile Development">Mobile Development</option>
+                        <option value="Data Science">Data Science</option>
+                        <option value="Artificial Intelligence">Artificial Intelligence</option>
+                    </select>
+                </div>
+                <br>
+                <button type="submit" id="btnSubmit">Kirim Data</button>
+            </form>
+
+            <div id="hasilInput" style="margin-top: 20px; padding: 10px; border: 1px solid #ccc; display: none;">
+                <h3>Hasil Input Terakhir:</h3>
+                <p id="tampilNama"></p>
+                <p id="tampilEmail"></p>
+                <p id="tampilMinat"></p>
+            </div>
+            
+            <br>
+            <a href="index.html">Kembali ke Halaman Utama</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>Website By Abin Copyright 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
